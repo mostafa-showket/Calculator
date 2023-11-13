@@ -4,34 +4,134 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="calculator.css" />
+    <script src="caculator.js"></script>
     <title>Calculator</title>
   </head>
   <body>
     <div class="calculator">
       <section class="result">
-        <input class="result--input" />
+        <input id="process" class="result--input" disabled />
+        <input id="result" class="result--input" />
       </section>
       <section class="numbers">
-        <input type="button" class="numbers--item" value="9" />
-        <input type="button" class="numbers--item" value="8" />
-        <input type="button" class="numbers--item" value="7" />
-        <input type="button" class="numbers--item" value="6" />
-        <input type="button" class="numbers--item" value="5" />
-        <input type="button" class="numbers--item" value="4" />
-        <input type="button" class="numbers--item" value="3" />
-        <input type="button" class="numbers--item" value="2" />
-        <input type="button" class="numbers--item" value="1" />
-        <input type="button" class="numbers--item" value="." />
-        <input type="button" class="numbers--item" value="0" />
-        <input type="button" class="numbers--item" value="=" />
+        <input
+          type="button"
+          class="numbers--item"
+          value="9"
+          onclick="Display(value)"
+        />
+        <input
+          type="button"
+          class="numbers--item"
+          value="8"
+          onclick="Display(value)"
+        />
+        <input
+          type="button"
+          class="numbers--item"
+          value="7"
+          onclick="Display(value)"
+        />
+        <input
+          type="button"
+          class="numbers--item"
+          value="6"
+          onclick="Display(value)"
+        />
+        <input
+          type="button"
+          class="numbers--item"
+          value="5"
+          onclick="Display(value)"
+        />
+        <input
+          type="button"
+          class="numbers--item"
+          value="4"
+          onclick="Display(value)"
+        />
+        <input
+          type="button"
+          class="numbers--item"
+          value="3"
+          onclick="Display(value)"
+        />
+        <input
+          type="button"
+          class="numbers--item"
+          value="2"
+          onclick="Display(value)"
+        />
+        <input
+          type="button"
+          class="numbers--item"
+          value="1"
+          onclick="Display(value)"
+        />
+        <input
+          type="button"
+          class="numbers--item"
+          value="0"
+          onclick="Display(value)"
+        />
+        <input
+          type="button"
+          class="numbers--item"
+          value="."
+          onclick="Display(value)"
+        />
+        <input
+          type="button"
+          class="numbers--item"
+          value="="
+          onclick="Calculate()"
+        />
       </section>
       <section class="specialCharacters">
-        <input type="button" class="specialCharacters--item" value="DEL" />
-        <input type="button" class="specialCharacters--item" value="%" />
-        <input type="button" class="specialCharacters--item" value="/" />
-        <input type="button" class="specialCharacters--item" value="*" />
-        <input type="button" class="specialCharacters--item" value="-" />
-        <input type="button" class="specialCharacters--item" value="+" />
+        <input
+          type="button"
+          class="specialCharacters--item"
+          value="AC"
+          id="clear"
+          style="display: none"
+          onclick="Clear()"
+        /><input
+          type="button"
+          class="specialCharacters--item"
+          value="DEL"
+          id="delete"
+          onclick="Delete()"
+        />
+        <input
+          type="button"
+          class="specialCharacters--item"
+          value="%"
+          onclick="Display(value)"
+        />
+        <input
+          type="button"
+          class="specialCharacters--item"
+          value="/"
+          onclick="Display(value)"
+        />
+        <input
+          type="button"
+          class="specialCharacters--item"
+          value="*"
+          onclick="Display(value)"
+        />
+        <input
+          type="button"
+          class="specialCharacters--item"
+          value="-"
+          onclick="Display(value)"
+        />
+        <input
+          type="button"
+          class="specialCharacters--item"
+          value="+"
+          onclick="Display(value)"
+        />
       </section>
     </div>
   </body>
