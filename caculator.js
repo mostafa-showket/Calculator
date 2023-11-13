@@ -1,5 +1,9 @@
 function Display(x) {
   document.getElementById("result").value += x;
+  if ((document.getElementById("delete").style["display"] = "none")) {
+    document.getElementById("clear").style["display"] = "none";
+    document.getElementById("delete").style["display"] = "initial";
+  }
 }
 
 function Delete() {
