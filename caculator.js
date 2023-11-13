@@ -12,6 +12,10 @@ function Delete() {
     0,
     result.length - 1
   );
+  if (document.getElementById("result").value == "") {
+    document.getElementById("delete").style["display"] = "none";
+    document.getElementById("clear").style["display"] = "initial";
+  }
 }
 
 function Clear() {
